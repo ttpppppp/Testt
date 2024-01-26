@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+body {}
+
+.container {
+    display: flex;
+}
+
+.left {
+    min-height: 100vh;
+    width: 20%;
+    background-color: #333;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.left .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left .avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #555;
+}
+
+.left h3 {
+    color: #fff;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 22px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.left .contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.left .contact i {
+    color: #fff;
+    background: #555;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+
+.left .contact i:hover {
+    background: #666;
+    color: dodgerblue;
+}
+
+.menu {
+    margin-top: 50px;
+    padding-left: 10px;
+    list-style: none;
+}
+
+.menu li a,
+i {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 2px;
+}
+.menu li a{
+    display: block;
+    width: 100%;
+}
+.menu li {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    transition: all linear 0.3s;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu li:hover {
+    background-color: #555;
+}
+
+.menu .active {
+    background-color: #555;
+}
+
+.menu .active i{
+    color: cornflowerblue;
+}
+.menu .active a{
+    color: cornflowerblue;
+}
+
+.copyright {
+    color: #fff;
+    margin-top: 190px;
+    text-align: center;
+}
+
+.copyright span {
+    color: #ccc;
+    font-weight: bold;
+}
+
+.right {
+    margin-left: 304px;
+    margin-top: 10px;
+}
+
+.right .title {
+    width: 85%;
+}
+
+.right .title h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: cornflowerblue;
+    position: relative;
+    padding: 10px 0px;
+}
+
+.right .title h2::before {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 50px;
+    background-color: deepskyblue;
+    bottom: 0;
+}
+
+.right .title p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.content {
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+}
+
+.content-left {
+    width: 20%;
+}
+
+.content-left img {
+    width: 100%;
+    background-image: red;
+}
+
+.content-right {
+    width: 60%;
+}
+
+.content-right h2 {
+    color: deeppink;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.content-right p {
+    margin-bottom: 10px;
+}
+
+.content li {
+    padding: 10px 0px;
+}
+
+.content li i {
+    color: dodgerblue;
+    font-size: 12px;
+}
+.list{
+    list-style: none;
+}
+
+.list span {
+    font-size: 16px;
+}
+
+.list-bold {
+    font-weight: bold;
+}
+
+.content-imformation {
+    display: flex;
+    gap: 60px;
+}
+
+.number {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.box-number {
+    display: flex;
+    gap: 10px;
+    width: 20%;
+}
+
+.box-number i {
+    color: dodgerblue;
+    font-size: 28px;
+    margin-top: 5px;
+}
+
+.react .react-title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.react .react-des {
+    font-weight: bold;
+}
+
+.facts {
+    margin-top: 10px;
+}
+
+.fact {
+    background-color: ghostwhite;
+    padding: 10px 10px 50px 10px;
+}
+
+.about {
+    padding-left: 14px;
+}
+
+.resume .title {
+    padding-left: 14px;
+    margin-bottom: 30px;
+}
+
+.sumary {
+    padding-left: 14px;
+}
+
+.sumary h2 {
+    margin-bottom: 10px;
+
+}
+
+.sumary-box {
+    margin-bottom: 10px;
+}
+
+.sumary-box h3 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.sumary-list {
+    margin-top: 10px;
+    list-style-type: disc !important;
+    padding-left: 14px;
+}
+.sumary-list li{
+    padding-bottom: 10px;
+}
+.sumary-content{
+    border-left: 2px solid dodgerblue;
+}
+.sumary-content p , .sumary-list{
+    margin-left: 10px;
+}
+.bg-years{
+    background-color: dodgerblue;
+    padding: 4px;
+}
+.eaducation{
+    padding-left: 14px;
+}
+.eaducation p{
+    margin-bottom: 10px;
+}
+.eaducation h2{
+    margin-bottom: 10px;
+}
+.resume-container{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.mr{
+    margin-bottom: 15px;
+}
+.contact-content{
+    padding-left: 14px;
+    background: #fff;
+}
+.map{ 
+    padding: 20px;
+    width: 40%;
+    box-shadow: 5px 5px 5px 5px #ccc;
+}
+.container-contact{ 
+    margin-top: 20px;
+    display: flex;
+    gap: 60px;
+    margin-bottom: 10px;
+}
+.box-map {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.box-map i{
+    font-size: 18px;
+    color:dodgerblue ;
+    margin-right: 5px;
+    margin-top: 3px;
+    background: rgb(95, 205, 242);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.map-img iframe{ 
+    width: 100%;
+    height: 250px;
+}
+.form{
+    box-shadow: 5px 5px 5px 5px #ccc;
+    width: 40%;
+    padding: 20px;
+}
+.form input{
+    display: block;
+    height: 30px;
+    width: 200px;
+}
+.form form{
+    width: 100%;
+}
+.form-control{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+form label{
+    margin-bottom: 10px;
+}
+.sub input{
+    width: 430px;
+    height: 30px;
+}
+.message{
+    margin-top: 30px;
+}
+button{
+    padding: 10px 15px;
+    background-color: dodgerblue;
+    outline: none;
+    border: none;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.btn-center{
+    text-align: center;
+}
+.up{
+    background-color: dodgerblue;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 50px;
+    right: -40px;
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+.up-animation{
+    right: 20px;
+    opacity: 1;
+}
